@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pókemon Battle</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/pokeball.png" type="image/x-icon">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <!--Google fonts-->
+    <script src="https://kit.fontawesome.com/8bf43e84bd.js" crossorigin="anonymous"></script><!--Font awesome-->
+
+</head>
+<body>
+
+    <div id="warning-control">
+        <h4 id="warning-message">You have to select pokemons to battle! </h4><i id="close-warning" class="fa-solid fa-circle-xmark"></i>
+    </div><!--warning-control-->
+
+    <div class="container">
+
+        <div id="search-container" class="">
+            <div class="title-control">
+                <h2>Pokémon Battle </h2>
+
+                <h4>Pick pokemons for battle! Have fun !</h4>
+            </div><!--title-control-->
+
+            <div class="input-control">
+
+                <select id="pokemon-select-1" aria-placeholder="Pick a pokemon..."></select>
+                <h1>X</h1>
+                <select id="pokemon-select-2" aria-placeholder="Pick a pokemon..."></select>
+            </div><!--input-control-->
+
+            <div class="buttons-control">
+                <button id="battle-btn">BATTLE !</button>
+                <button id="clear-btn">CLEAR</button>
+            </div><!--buttons-control-->
+        </div><!--search-container-->
+
+        <div id="result-container" class="hide">
+    
+            <div class="contestants-container">
+                <div class="contestants-title">
+                    <h3>Battle contestants</h3>
+                </div><!--contestants-title-->
+
+                <div class="contestants-control">
+
+                    <div class="contestants-image">
+
+                        <div class="image-container">
+
+                            <img src="" id="pokemon-image-1"/>
+
+                        </div><!--image-container-->
+                        <h4 id="pokemon-name-1"></h4>
+                        <h5 id="pokemon-points-1"></h5>
+
+                    </div><!--contestants-image-->
+
+                    <img src="images/vs_image.png" id="vs-image"/>
+
+                    <div class="contestants-image">
+                        <img src="" id="pokemon-image-2"/>
+
+                        <h4 id="pokemon-name-2"></h4>
+                        <h5 id="pokemon-points-2"></h5>
+                    </div><!--contestants-image-->
+
+                </div><!--contestants-control-->
+                
+            </div><!--contestants-container-->
+
+            <div class="pokeball-lines-container">
+                <div class="horizontal-line"></div>
+                <img src="images/pokeball_blue.png" />
+                <div class="horizontal-line"></div>
+            </div><!--pokeball-lines-container-->
+
+            <div class="winner-container">
+                <div class="w50 winner-title-control">
+                    <h3 id="winner-apresent"></h3>
+                    <h4 id="winner-title"></h4>
+                </div><!--w50 winner-title-control-->
+
+                <div class="w50 winner-image-control">
+                    <img src="" id="winner-image">
+                </div><!--w50 winner-image-control-->
+
+                <div class="clear"></div>
+                
+            </div><!--winner-container-->
+
+            <div class="back-control-container">
+
+                <button id="back-btn">BACK</button>
+                
+            </div><!---back-control-container-->
+
+        </div><!--result-container-->
+        
+    </div><!--container-->
+
+    <h6>Pokemon battle v1.0</h6>
+    
+</body>
+<script src="scripts/main.js"></script>
+</html>

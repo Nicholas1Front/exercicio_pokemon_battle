@@ -1,0 +1,288 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    background-color:#1a1a1a;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body h6{
+    position: absolute;
+    margin-left:90%;
+    margin-top: 48%;
+    color:#66FCF1;
+    font-weight: normal;
+}
+
+.container{
+    background-color:#242424 ;
+    width:45%;
+    border:1px solid #66FCF1;
+    border-radius: 25px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.w50{
+    width:50%;
+    float:left;
+}
+
+
+.clear{
+    clear: both;
+}
+
+/* search-container */
+
+#search-container{
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.title-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:18px;
+}
+
+.title-control h2{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color:#66FCF1;
+}
+
+.title-control h4{
+    font-size: 17px;
+    color:#e1e1e1;
+    /* font-weight: lighter; */
+}
+
+.input-control{
+    padding:15px 0;
+    margin:15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-control select{
+    width:33%;
+    padding:12px 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #242424;
+    border:1px solid #66FCF1;
+    color:#66FCF1;
+    cursor:pointer;
+    font-size: 16px;
+}
+
+.input-control h1{
+    font-size:25px;
+    color:#66FCF1;
+    margin : 0 10px;
+}
+
+.buttons-control{
+    margin:8px 0;
+    padding:10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-control button{
+    padding:16px 24px;
+    background-color: #66FCF1;
+    color:black;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin:0 15px;
+    opacity:0.8;
+    cursor:pointer;
+}
+
+.buttons-control button:hover{
+    opacity: 1;
+}
+
+.buttons-control #clear-btn{
+    background-color: #242424;
+    color:#66FCF1;
+    border:1px solid #66FCF1;
+}
+
+/* result-container */
+
+#result-container{
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.pokeball-lines-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line{
+    width:30%;
+    height:1px;
+    margin-left:8px;
+    margin-right:8px;
+    background-color: #66FCF1;
+}
+
+.pokeball-lines-container img{
+    width:50px;
+}
+
+.contestants-title{
+    margin:10px 0;
+}
+
+.contestants-title h3{
+    font-size: 21px;
+
+}
+
+.contestants-control{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contestants-control h4{
+    font-size:20px;
+    color:#66FCF1;
+}
+
+.contestants-control h5{
+    font-size:13px;
+    padding:5px 0;
+    font-weight: normal;
+
+}
+
+.contestants-image{
+    margin-left:35px;
+    margin-right:35px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.image-container{
+    width: 145px;
+    height:145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container #pokemon-image-1 , #pokemon-image-2{
+    width: 145px;
+    height:145px;
+}
+
+#vs-image{
+    width:50px;
+}
+
+.winner-container{
+    display:flex;
+    align-items: center;
+    margin:10px 0;
+    padding:15px 0;
+}
+
+.winner-title-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.winner-title-control h3{
+    font-size:25px;
+
+}
+
+#winner-title{
+    font-size: 19px;
+    background-color: #66FCF1;
+    color:black;
+    width:fit-content;
+    margin-top:12px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    padding:10px 12px;
+}
+
+.back-control-container{
+    padding:12px 0 ;
+    margin: 7px 0;
+}
+
+#back-btn{
+    padding:15px 26px;
+    background-color: #66FCF1;
+    color:black;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin:0 15px;
+    opacity:0.8;
+    cursor:pointer;
+}
+
+#back-btn:hover{
+    opacity: 1;
+}
+
+/* warning-control */
+
+#warning-control{
+    position: absolute;
+    margin-top:-99%;
+    background-color: #cf483e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.5%;
+    font-size: 14px;
+}
+
+#close-warning{
+   font-size: 24px;
+   margin-left:8px;
+   cursor:pointer;
+   opacity: 0.9;
+}
+
+#close-warning:hover{
+    opacity : 1;
+}
